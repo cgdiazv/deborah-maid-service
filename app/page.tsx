@@ -50,17 +50,14 @@ export default function HomePage() {
             
             {/* Left Column: Content */}
             <div className="max-w-xl">
-              {/* Styled Subheading */}
               <span className="block text-brand-blue font-bold text-sm tracking-widest uppercase mb-4">
                 The Most Reliable Name In Cleaning Business
               </span>
               
-              {/* Main Heading */}
               <h2 className="text-4xl lg:text-5xl font-extrabold text-[#0a2b4e] leading-tight mb-8">
                 Trusted Cleaning Professionals
               </h2>
               
-              {/* Paragraphs with Icon Side-by-Side */}
               <div className="flex gap-5 items-start mb-6">
                 <div className="flex-shrink-0 mt-1 opacity-60">
                   <Sparkles className="w-12 h-12 text-brand-blue stroke-[1.5]" />
@@ -77,7 +74,6 @@ export default function HomePage() {
 
               <div className="w-full h-px bg-gray-100 my-10"></div>
 
-              {/* We Provide Grid List */}
               <ul className="grid sm:grid-cols-2 gap-y-4 gap-x-6">
                 {[
                   'One-off, weekly or fortnightly visits',
@@ -97,11 +93,11 @@ export default function HomePage() {
               </ul>
             </div>
 
-            {/* Right Column: Image with Overlays - Updated for Mobile Responsiveness */}
-            <div className="relative max-w-[340px] sm:max-w-md mx-auto lg:max-w-none lg:mx-0 mt-12 lg:mt-0 mb-20 lg:mb-0">
+            {/* Right Column: Image with Overlays */}
+            <div className="relative w-full max-w-md mx-auto lg:max-w-none mt-12 lg:mt-0 mb-12 lg:mb-0">
               
-              {/* Main Image Container (Added bg-gray-100 fallback and responsive height) */}
-              <div className="relative h-[400px] lg:h-[550px] w-full rounded-3xl overflow-hidden shadow-sm bg-gray-100 border border-gray-100">
+              {/* Main Image Container */}
+              <div className="relative h-[350px] sm:h-[450px] lg:h-[550px] w-full rounded-3xl overflow-hidden shadow-sm bg-gray-100 border border-gray-100">
                 <Image 
                   src="/header.webp" 
                   alt="Professional Cleaner" 
@@ -111,26 +107,22 @@ export default function HomePage() {
               </div>
 
               {/* Top Left Ribbon Overlay */}
-              <div className="absolute -top-4 -left-2 sm:left-6 flex flex-col items-center drop-shadow-xl z-10 w-[64px] sm:w-[72px]">
-                {/* Ribbon Top (Blue) */}
+              <div className="absolute -top-4 -left-2 sm:left-6 flex flex-col items-center drop-shadow-xl z-10 w-[72px]">
                 <div className="bg-brand-blue w-full h-8 flex justify-center items-center rounded-t-lg text-white gap-[2px]">
-                  <Star className="w-2 h-2 sm:w-2.5 sm:h-2.5 fill-current" />
-                  <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current mb-1" />
-                  <Star className="w-2 h-2 sm:w-2.5 sm:h-2.5 fill-current" />
+                  <Star className="w-2.5 h-2.5 fill-current" />
+                  <Star className="w-3.5 h-3.5 fill-current mb-1" />
+                  <Star className="w-2.5 h-2.5 fill-current" />
                 </div>
-                {/* Ribbon Bottom (Yellow with jagged cut) */}
-                <div 
-                  className="bg-[#ffc107] w-full pb-6 sm:pb-8 pt-2 sm:pt-3 px-1 sm:px-2 text-center text-[#0a2b4e] font-black leading-tight" 
-                  style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%)' }}
-                >
-                  <span className="text-base sm:text-lg">97%</span><br/>
-                  <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-wider">Customer<br/>Rating</span>
+                <div className="bg-[#ffc107] w-full pb-8 pt-3 px-2 text-center text-[#0a2b4e] font-black leading-tight" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%)' }}>
+                  <span className="text-lg">97%</span><br/>
+                  <span className="text-[9px] uppercase font-bold tracking-wider">Customer<br/>Rating</span>
                 </div>
               </div>
 
-              {/* Bottom Floating Card - Centered on Mobile, Right-aligned on Desktop */}
-              <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-auto sm:-bottom-10 sm:-right-10 bg-white p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] w-[90%] sm:w-[280px] z-10 border border-gray-50">
-                <ClipboardList className="w-8 h-8 sm:w-10 sm:h-10 text-brand-blue mb-4 sm:mb-6" strokeWidth={1.5} />
+              {/* Floating Card - Fixed Mobile Layout! */}
+              {/* Uses normal flow with negative top margin on mobile, absolute on desktop */}
+              <div className="relative -mt-16 z-20 mx-4 sm:mx-0 sm:absolute sm:mt-0 sm:-bottom-10 sm:-right-10 bg-white p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-50 sm:w-[280px]">
+                <ClipboardList className="w-10 h-10 text-brand-blue mb-4 sm:mb-6" strokeWidth={1.5} />
                 <p className="text-gray-500 font-bold text-sm leading-relaxed">
                   Our housekeepers will always arrive with your customized cleaning plan in hand to help.
                 </p>
@@ -265,74 +257,74 @@ export default function HomePage() {
       </section>
 
       {/* REASONS TO CHOOSE US SECTION */}
-<section className="py-16 lg:py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-      
-      {/* Left Column: Image */}
-      <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-lg order-2 lg:order-1">
-        <Image 
-          src="/apartment-cleaning.webp" // Replace with your desired image path
-          alt="Reasons To Choose Us" 
-          fill 
-          className="object-cover"
-        />
-      </div>
-
-      {/* Right Column: Content */}
-      <div className="order-1 lg:order-2">
-        <h2 className="text-4xl font-extrabold text-[#0a2b4e] mb-6">
-          Reasons To Choose Us
-        </h2>
-        <p className="text-gray-500 mb-12 text-lg">
-          Behind our commitment to excellence are few key attributes that define who we are and what makes us different from any other.
-        </p>
-
-        <div className="space-y-10">
-          {/* Top Rated */}
-          <div className="flex gap-4">
-            <div className="flex-shrink-0 mt-1">
-              <Star className="w-8 h-8 text-brand-green" />
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            {/* Left Column: Image */}
+            <div className="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-sm bg-gray-100 border border-gray-100 order-2 lg:order-1">
+              <Image 
+                src="/header.webp" 
+                alt="Reasons To Choose Us" 
+                fill 
+                className="object-cover"
+              />
             </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Top Rated</h3>
-              <p className="text-gray-500 leading-relaxed text-[15px]">
-                We hold a successful track record of satisfying our customers and getting back their bond money.
+
+            {/* Right Column: Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-extrabold text-[#0a2b4e] sm:text-4xl mb-6">
+                Reasons To Choose Us
+              </h2>
+              <p className="text-gray-500 mb-10 text-lg leading-relaxed">
+                Behind our commitment to excellence are few key attributes that define who we are and what makes us different from any other.
               </p>
-            </div>
-          </div>
 
-          {/* Superior Quality */}
-          <div className="flex gap-4">
-            <div className="flex-shrink-0 mt-1">
-              <Sparkles className="w-8 h-8 text-brand-green" />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Superior Quality</h3>
-              <p className="text-gray-500 leading-relaxed text-[15px]">
-                We use the most excellent quality tools and equipment to get all the dust and dirt out of your premises.
-              </p>
-            </div>
-          </div>
+              <div className="space-y-10">
+                {/* Top Rated */}
+                <div className="flex gap-5 items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Star className="w-7 h-7 text-brand-green" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Top Rated</h3>
+                    <p className="text-gray-500 leading-relaxed text-[15px]">
+                      We hold a successful track record of satisfying our customers and getting back their bond money.
+                    </p>
+                  </div>
+                </div>
 
-          {/* Eco-Friendly */}
-          <div className="flex gap-4">
-            <div className="flex-shrink-0 mt-1">
-              <Check className="w-8 h-8 text-brand-green" />
+                {/* Superior Quality */}
+                <div className="flex gap-5 items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Sparkles className="w-7 h-7 text-brand-green" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Superior Quality</h3>
+                    <p className="text-gray-500 leading-relaxed text-[15px]">
+                      We use the most excellent quality tools and equipment to get all the dust and dirt out of your premises.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Eco-Friendly */}
+                <div className="flex gap-5 items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Check className="w-7 h-7 text-brand-green" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Eco-Friendly Products</h3>
+                    <p className="text-gray-500 leading-relaxed text-[15px]">
+                      We use biodegradable products which do not harm the environment, pets or humans in any way.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 className="text-xl font-bold text-[#0a2b4e] mb-2">Eco-Friendly Products</h3>
-              <p className="text-gray-500 leading-relaxed text-[15px]">
-                We use biodegradable products which do not harm the environment, pets or humans in any way.
-              </p>
-            </div>
+
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   );
 }
