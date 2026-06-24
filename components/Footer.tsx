@@ -49,13 +49,13 @@ export default function Footer() {
             
             {/* Social Icons */}
             <div className="flex items-center gap-4">
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.facebook.com/deborahmaidservices" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
                 <FacebookIcon className="w-5 h-5" />
               </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.instagram.com/deborahmaidservices" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
                 <InstagramIcon className="w-5 h-5" />
               </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="TikTok" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
+              <a href="https://www.tiktok.com/@deborahmaidservices" target="_blank" rel="noreferrer" aria-label="TikTok" className="w-10 h-10 rounded-full bg-white/5 hover:bg-brand-green hover:text-[#0a2b4e] flex items-center justify-center transition-colors duration-300">
                 <TikTokIcon className="w-5 h-5" />
               </a>
             </div>
