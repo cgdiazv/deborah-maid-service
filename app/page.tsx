@@ -264,7 +264,7 @@ export default function HomePage() {
             {/* Left Column: Image */}
             <div className="relative h-[400px] lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-sm bg-gray-100 border border-gray-100 order-2 lg:order-1">
               <Image 
-                src="/header.webp" 
+                src="/apartment-cleaning.webp" 
                 alt="Reasons To Choose Us" 
                 fill 
                 className="object-cover"
