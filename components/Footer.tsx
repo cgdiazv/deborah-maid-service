@@ -113,8 +113,8 @@ export default function Footer() {
                 </div>
                 <div className="mt-0.5">
                   <p className="text-[13px] text-gray-400 uppercase tracking-wider font-bold mb-1">Email Address</p>
-                  <a href="mailto:info@deborahmaidservices.com" className="text-white hover:text-brand-green font-medium transition-colors text-[15px] break-all">
-                    info@deborahmaidservices.com
+                  <a href="mailto:info@deborahmaidservice.com" className="text-white hover:text-brand-green font-medium transition-colors text-[15px] break-all">
+                    info@deborahmaidservice.com
                   </a>
                 </div>
               </li>
