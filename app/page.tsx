@@ -99,7 +99,7 @@ export default function HomePage() {
               {/* Main Image Container */}
               <div className="relative h-[350px] sm:h-[450px] lg:h-[550px] w-full rounded-3xl overflow-hidden shadow-sm bg-gray-100 border border-gray-100">
                 <Image 
-                  src="/header.webp" 
+                  src="/trusted-cleaning.webp" 
                   alt="Professional Cleaner" 
                   fill 
                   className="object-cover"

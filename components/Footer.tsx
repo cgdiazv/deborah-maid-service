@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, Clock } from 'lucide-react'; // Removed Facebook & Instagram from here
+import { Phone, Mail, Clock } from 'lucide-react';
 
 // Custom SVG Icons
 const FacebookIcon = ({ className }: { className?: string }) => (
@@ -32,18 +32,17 @@ export default function Footer() {
         {/* Top Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
           
-          {/* 1. Brand & About - Logo section updated */}
-<div className="col-span-1 lg:col-span-1">
-  <Link href="/" className="inline-block mb-6">
-  <Image 
-    src="/logo.webp" 
-    alt="Deborah Maid Service LLC" 
-    width={180} 
-    height={54} 
-    // This filter turns any color into bright white
-    className="object-contain w-auto h-12 brightness-0 invert" 
-  />
-</Link>
+          {/* 1. Brand & About */}
+          <div className="col-span-1 lg:col-span-1">
+            <Link href="/" className="inline-block mb-6">
+              <Image 
+                src="/logo.webp" 
+                alt="Deborah Maid Service LLC" 
+                width={180} 
+                height={54} 
+                className="object-contain w-auto h-12 brightness-0 invert" 
+              />
+            </Link>
             <p className="text-gray-400 text-[15px] leading-relaxed mb-6">
               Delivering the highest standards of clean and a guarantee to treat your home and office with the utmost care and professionalism.
             </p>
@@ -137,11 +136,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Deborah Maid Service LLC. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4 text-sm text-gray-400">
+          {/* Added text-center md:text-left here */}
+          <p className="text-center md:text-left">
+            © {new Date().getFullYear()} Deborah Maid Cleaning Services LLC. All rights reserved.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+            <div className="flex gap-4 sm:gap-6">
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            </div>
+            
+            {/* Desktop separator dot */}
+            <span className="hidden sm:block w-1 h-1 rounded-full bg-gray-500"></span>
+            
+            {/* Powered By Link */}
+            <span>
+              Powered by <a href="https://indevasa.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-green font-medium transition-colors">Indeva Websites</a>
+            </span>
           </div>
         </div>
 
